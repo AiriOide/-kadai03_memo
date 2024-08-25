@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お気に入りリンク集</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>お気に入りリンク集</h1>
+        <form id="addLinkForm">
+            <input type="text" id="linkName" placeholder="サイト名" required>
+            <input type="url" id="linkUrl" placeholder="URL" required>
+            <input type="text" id="linkCategory" placeholder="カテゴリ">
+            <button type="submit">追加</button>
+        </form>
+        <input type="text" id="searchInput" placeholder="検索...">
+        <div id="categoriesContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
